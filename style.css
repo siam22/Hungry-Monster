@@ -1,0 +1,7 @@
+body {
+    height: 100px;
+}
+#submit {
+    background-color: orangered;
+    color: white;
+}
