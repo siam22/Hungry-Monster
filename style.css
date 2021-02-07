@@ -1,7 +1,30 @@
 body {
-    height: 100px;
+    height: 1000px;
+    padding-top: 100px;
+}
+#meals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    
 }
 #submit {
     background-color: orangered;
     color: white;
+}
+.mealInfo {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 400px;
+    background-color: lavender;
+}
+.mealName {
+    font-size: 45px;
+    text-align: center;
+    color: black;
+}
+.mealInfo img {
+    width: 100%;
+    border-radius: 10px;
 }
