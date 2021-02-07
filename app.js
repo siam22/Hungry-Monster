@@ -12,12 +12,18 @@ document.getElementById('submit').addEventListener('click', function(){
          <div class="mealInfo">
          <img src=${meal.strMealThumb}>
           <h3 class="mealName">${meal.strMeal}</h3>
+          <button onclick="displayIngredient('${meal.strMeal}')">Ingredients</button>
          </div>
          `;
          mealDiv.innerHTML = mealInfo;
          mealsDiv.appendChild(mealDiv);
     });
-
             
  }
+  const displayIngredient = meal => {
+      const IngredientList = [ 
+          
+      ]
+        console.log();
+  }
  
