@@ -12,27 +12,20 @@ document.getElementById('submit').addEventListener('click', function(){
          <div class="mealInfo">
          <img src=${meal.strMealThumb}>
           <h3 class="mealName">${meal.strMeal}</h3>
-          <button onclick="displayIngredient('${meal.strMeal}')">Ingredients</button>
+          <h5>Ingredients:</h5>
+          <li>${meal.strIngredient1}</li>
+          <li>${meal.strIngredient2}</li>
+          <li>${meal.strIngredient3}</li>
+          <li>${meal.strIngredient4}</li>
+          <li>${meal.strIngredient5}</li>
+          <li>${meal.strIngredient6}</li>
+          <li>${meal.strIngredient7}</li>
+          <li>${meal.strIngredient8}</li>
+          <li>${meal.strIngredient9}</li>
+          <li>${meal.strIngredient10}</li>
          </div>
          `;
          mealDiv.innerHTML = mealInfo;
          mealsDiv.appendChild(mealDiv);
     });
-            
  }
-  const displayIngredient = meal => {
-       let i = meal.strIngredient1;
-        i = meal.strIngredient2;
-        i = meal.strIngredient3;
-        i = meal.strIngredient4;
-        i = meal.strIngredient5;
-        i = meal.strIngredient6;
-        i = meal.strIngredient7;
-        i = meal.strIngredient8;
-        i = meal.strIngredient9;
-        i = meal.strIngredient10;
-        const detailIngredient =  meal[`strIngredient${i}`]
-
-        console.log(detailIngredient);
-
-  }
